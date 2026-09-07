@@ -1,0 +1,107 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-card.last { margin-bottom: 16px; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">카자흐스탄에서 바이낸스와 국립은행 간 결제허브 구축 MOU 체결 및 대규모 정유·석유화학 복합단지 개발 협력 논의 진행. 캄보디아에서는 한국과 해상 마약 밀매 공동단속 양해각서 체결. 미얀마에서는 한국 기업의 약용작물 재배 협력 논의 확인.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">2026년 9월 7일, 카자흐스탄 국립은행과 바이낸스가 중앙아시아·CIS·동유럽 대상 결제허브 구축을 위한 MOU 체결. <b>1종 결제기관</b> 인가 기반의 국경 간 결제·가상자산 정산 인프라 구축 추진 중. 스테이블코인 발행 검토 및 바이낸스페이 파트너십도 병행 공개. 구체적 출시 일정·거래 규모는 미공개 상태로 모니터링 대상.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">카자흐스탄 에너지부와 삼성E&A 간 고위급 면담 진행. 연간 최대 <b>1,000만 톤</b> 규모 제4 정유공장 및 석유화학 복합단지 개발 협력 방안 논의. 현재 예비타당성조사 단계이며, 기술 구성·입지·민간 투자 유치 방안 검토 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-외교">외교</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">2026년 9월 7일, 한국 해경과 캄보디아 마약퇴치국가당국(NACD) 간 해상 마약 밀매 공동단속 MOU 체결. 캄보디아 당국은 <b>2026년 1~8월</b> 기간 마약 용의자 1만 9,652명 체포, 2.65톤 압수 발표. 캄보디아 내 마약의 80~85%는 제3국 경유 운송 목적으로 확인.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-산업">산업</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">한국 한약재 기업 동양허브가 미얀마 산림청·보건약재청과 약용작물 현지 재배 확대 협력 방안 논의. 미얀마 산림청은 재배용 토지 제공 의사 표명. 시범 재배 결과 토대로 품목·면적 단계적 확대 계획.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">카자흐스탄 바이낸스 결제허브 사업은 MOU 체결 단계로, 출시 일정·거래 규모·지원 통화·수수료 등 세부 조건이 미공개 상태. 중앙아시아·CIS 각국의 규제 환경이 상이하여 실제 운영 방식은 국가별 현지 규정 적용을 받을 예정임을 참고 요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.wikitree.co.kr/articles/1157893" target="_blank">→ 바이낸스, 카자흐스탄 국립은행과 1종 결제기관으로 중앙아·CIS 허브 구축한다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.the-today.com/news/articleView.html?idxno=89682" target="_blank">→ 삼성E&A, 카자흐스탄 신규 정유·석유화학 콤플렉스 사업 협력 논의</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20260907_0003779889" target="_blank">→ 韓, 캄보디아와 해상 마약 밀매 공동단속 양해각서 체결</a>
+  </div>
+  <div class="source-card">
+    <a href="http://weekly.chosun.com/news/articleView.html?idxno=55045" target="_blank">→ 한약재 공급망 '탈중국' 움직임…미얀마서 대량재배 추진</a>
+  </div>
+
+</div>
