@@ -1,0 +1,140 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .tag-자연재해 { background: #FCEBEB; color: #A32D2D; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아 온라인 스캠 풍선효과로 동남아 6개국 한국인 검거 급증, 카자흐스탄 <b>2030년</b>까지 수자원 인프라 대규모 개편 추진</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아·동남아</span>
+      <span class="tag tag-사회">사회</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text"><b>2026년 상반기</b> 동남아 6개국(캄보디아·베트남·태국·필리핀·말레이시아·라오스)에서 온라인 스캠·도박 등 초국가범죄 혐의로 검거된 한국인 <b>462명</b> — 전년 동기(100명) 대비 4.6배 증가, 캄보디아 스캠단지 단속 이후 인접국 확산 흐름 확인</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-규제">규제</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">캄보디아 납치·감금 가해자는 <b>2026년 상반기 9명</b>으로 전년 연간(125명) 대비 급감 — 코리안데스크 가동 및 범정부 초국가범죄 특별대응 TF 운영 효과로 분석, 사기 범죄는 지속 증가 추세 병존</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-경제">경제</span>
+      <span class="tag tag-산업">산업</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text"><b>2026년 9월 3일</b> 캄보디아 국세청장이 한캄상공회의소를 직접 방문해 현지 진출 기업 세무 애로 청취 — 캄보디아상공회의소(CCC)·한캄상공회의소(KOCHAM) 간 경제·투자 협력 MOU 체결 병행</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+      <span class="tag tag-산업">산업</span>
+      <span class="tag tag-규제">규제</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">카자흐스탄 정부, <b>2024~2030년</b> 수자원 관리체계 발전계획 성과 공개 — 신규 저수지 42곳 건설·기존 37곳 재건·관개수로 <b>1만4500㎞</b> 현대화 추진, <b>2026~2028년</b> 국가 예산 <b>2280억 텡게(약 6840억원)</b> 투입 예정</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-자연재해">자연재해</span>
+      <span class="tag tag-경제">경제</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text"><b>2024년</b> 80년 만에 사상 최악의 홍수 이후 수자원 인프라 개혁 본격화 — 새로운 수자원법 시행, <b>2024~2025년</b> 수자원 분야 고정자산 투자액 <b>6767억 텡게(약 2조300억원)</b>으로 직전 2년 대비 79% 증가</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄·키르기스스탄</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">카자흐스탄, 우즈베키스탄과 국경하천 공동 관리·합리적 이용 협정 체결 — 중국·키르기스스탄·러시아 등 주변국과 수자원 배분 협상 진행 중</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">라오스 출신 계절근로자의 한국 농촌 내 사업장 변경 제한·처우 문제 공론화 — 폭염 중 사망 사례 및 열악한 숙소·임금 체불 등 노동환경 이슈 제기, 제도 개선 논의 확산 흐름</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아 스캠 단속 이후 베트남·태국·말레이시아·라오스 등 인접국으로 초국가범죄 활동이 분산되는 흐름이 수치로 확인됨. 동남아 해당 지역 현지 체류·활동 관련 동향 모니터링 대상. 카자흐스탄 수자원 인프라 투자 확대는 농업·건설·금융 등 관련 산업 전반에 걸친 정책 변화로, 중앙아시아 지역 규제·사업 환경 변동 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/politics/2026/09/06/2026090611450493732" target="_blank">→ 단독 동남아서 韓사기 가해자 폭증...캄보디아 '풍선효과'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sejungilbo.com/news/articleView.html?idxno=59967" target="_blank">→ 임광현 국세청장 세정외교 '결실'…캄보디아 국세청장, 한국기업 세무애로 직접 챙겼다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.tfmedia.co.kr/news/article.html?no=207016" target="_blank">→ 캄보디아 국세청 움직인 세정외교…임광현 "현지기업, 실질적 도움될 것"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20260906010001942" target="_blank">→ 카자흐스탄, 수자원 관리체계 개편 추진…기후변화 속 '물 확보' 총력</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hani.co.kr/arti/opinion/column/1276487.html" target="_blank">→ 라오스 계절노동자가 겪은 한국 농촌 [6411의 목소리]</a>
+  </div>
+
+</div>
