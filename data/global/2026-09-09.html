@@ -1,0 +1,109 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아 내 한국인 국외도피사범 집중 현상 지속 확인, 카자흐스탄은 2030년 목표 국제 위성군 구축 프로젝트 공식 발표. 동남아·중앙아시아 지역 동향 주시 필요.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">2025년 1~7월 신규 국외도피사범 <b>372명</b>이 캄보디아로 집중, 전체 신규 도피사범의 <b>37.7%</b> 차지. 2023년 21명 대비 2년 만에 급증 흐름.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">시아누크빌·프놈펜·바벳·포이펫 등지에서 온라인 사기·불법도박 범죄조직 활동 지속 확인. 일부 조직은 미얀마·라오스로 거점 이동 후 복귀 사례 보고.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">2025년 1~7월 캄보디아발 국내 송환 인원 <b>243명</b>으로, 2024년 연간 143명 초과. 한·캄보디아 공동 TF 가동 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text"><b>2026년 9월 7일</b> 아스타나 국제 우주포럼에서 몽골·콩고·나이지리아와 <b>2030년</b>까지 9기 국제 위성군 구축 계획 공식 발표. 최대 14기 확대 가능성 언급.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">농업·환경·천연자원 관측 목적의 지구관측위성 공동 제작 추진 중. 아스타나 위성 조립·시험시설 기반 자체 제작 역량 확대 흐름.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아 내 온라인 사기·보이스피싱 범죄조직 활동이 프놈펜·시아누크빌·바벳·포이펫 등 주요 도시 및 국경지대에서 지속 확인되고 있으며, 일부 조직은 미얀마·라오스로 거점을 이동하는 사례도 보고. 해당 지역 방문 또는 현지 활동 관련 업무 시 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20260908510105?OutUrl=naver" target="_blank">→ [단독] 해외 도피범 10명 중 4명 캄보디아로…7개월 새 372명</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20260908010002729" target="_blank">→ 우주기지의 나라 넘어 위성 수출까지…카자흐스탄, 국제 위성 프로젝트 추진</a>
+  </div>
+
+</div>
