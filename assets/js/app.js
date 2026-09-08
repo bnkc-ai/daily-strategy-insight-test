@@ -1,7 +1,7 @@
 /* 뉴스 전략 인사이트 플랫폼 — app.js */
 let allInsights = [];
 
-const CATEGORY_ORDER = ['general', 'auto-finance', 'retail-finance', 'corporate-finance', 'A-IT'];
+const CATEGORY_ORDER = ['general', 'auto-finance', 'retail-finance', 'corporate-finance', 'A-IT', 'global'];
 function categoryRank(cat) {
   const i = CATEGORY_ORDER.indexOf(cat);
   return i === -1 ? 999 : i;

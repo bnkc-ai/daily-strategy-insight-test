@@ -29,6 +29,7 @@
   --c-cor:  #047857; --c-cor-bg:  #ECFDF5;
   --c-aut:  #B45309; --c-aut-bg:  #FEF3C7;
   --c-it:   #B91C1C; --c-it-bg:   #FEE2E2;
+  --c-global: #0891B2; --c-global-bg: #CFFAFE;
 
   --r-sm:  10px;
   --r-md:  14px;
@@ -344,6 +345,7 @@ body {
 .snapshot-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .snapshot-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
 .snapshot-card[data-cat="A-IT"]::before               { background: var(--c-it); }
+.snapshot-card[data-cat="global"]::before             { background: var(--c-global); }
 .snapshot-card-header { margin-bottom: 9px; }
 .snapshot-title {
   font-size: 14px; font-weight: 600; color: var(--text-1);
@@ -451,6 +453,7 @@ body {
 .archive-item[data-cat="corporate-finance"] .archive-item-accent{ background: var(--c-cor); }
 .archive-item[data-cat="auto-finance"] .archive-item-accent     { background: var(--c-aut); }
 .archive-item[data-cat="A-IT"] .archive-item-accent               { background: var(--c-it); }
+.archive-item[data-cat="global"] .archive-item-accent             { background: var(--c-global); }
 .archive-badge-wrap {
   display: flex; align-items: center; justify-content: center;
   padding: 0 12px; min-width: 74px; flex-shrink: 0;
@@ -484,6 +487,7 @@ body {
 .badge-corporate-finance{ background: var(--c-cor-bg); color: var(--c-cor); }
 .badge-auto-finance     { background: var(--c-aut-bg); color: var(--c-aut); }
 .badge-A-IT               { background: var(--c-it-bg);  color: var(--c-it);  }
+.badge-global             { background: var(--c-global-bg); color: var(--c-global); }
 
 /* ── Empty State ── */
 .empty-state {
@@ -609,6 +613,7 @@ body {
 .meta-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .meta-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
 .meta-card[data-cat="A-IT"]::before               { background: var(--c-it); }
+.meta-card[data-cat="global"]::before             { background: var(--c-global); }
 .meta-card-head {
   display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; row-gap: 6px;
