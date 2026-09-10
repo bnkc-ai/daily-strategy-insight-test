@@ -1,0 +1,102 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.note-empty { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.note-empty .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스에서 금융사 주도 교육 인프라 지원 사업 추진 확인. 카자흐스탄 신도시 알라타우시에서 디지털트윈 기반 스마트시티 개발 협력 MOU 체결.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">비엔티안시 싸이세타구 농니엥 중학교 대상, 도서관 건축 및 교육 기자재 지원 사업 추진. 라오스 중앙은행·교육부와 협의 거쳐 <b>총 1억 원</b> 규모로 진행.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">라오스 1인당 명목 국내총소득 약 <b>2,000달러</b> 수준으로, 학교 시설 노후화 및 교육 기자재 부족 상황 지속 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">알마티 북쪽 약 <b>50km</b> 지점에 조성 중인 신도시 알라타우시, 디지털트윈 생태계 구축 MOU 체결(<b>2025년 9월 9일</b>). 국제 비즈니스·기술·금융 허브 개발 추진 중.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">알라타우시 프로젝트, IoT·3D 공간정보·AI 기반 예측 분석 등 단계적 적용 계획. 교통·환경·안전·자율주행 모빌리티 분야로 확대 예정. 주시 대상.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card note-empty">
+    <div class="note-content">금일 수집 기사 검토 결과, 별도 참고 유의점은 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.sedaily.com/article/20089512?ref=naver" target="_blank">→ KB캐피탈, 라오스 도서관 건립에 1억 기부</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.m-i.kr/news/articleView.html?idxno=1412443" target="_blank">→ 트럭 차주 부담 덜고, 라오스엔 도서관…멀리 보는 캐피탈 [캐피탈 톡톡]</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.joongang.co.kr/article/25460775" target="_blank">→ AST홀딩스, 카자흐스탄 알라타우시와 디지털트윈 구축 MOU</a>
+  </div>
+
+</div>
