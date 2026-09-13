@@ -1,0 +1,106 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아·태국 국경 분쟁 휴전 9개월 경과, 프레아비헤아르 일대 피해 복구 진행 중. 캄보디아 내 한국 도피사범 집중 현상 확대 흐름. 카자흐스탄 대통령 방한 외교 일정 확인.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-재해">재해</span>
+    </div>
+    <div class="issue-text">2025년 5월 발발한 태국·캄보디아 국경 분쟁은 <b>2025년 12월</b> 휴전 돌입 후 현재까지 유지 중이나, 프레아비헤아르 사원 일대 마을은 반폐허 상태로 복구 진행 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">분쟁 기간 양측 군인 <b>100명</b> 사망, 인근 주민 최대 <b>100만 명</b> 피란 발생. 캄보디아 정부 임시주택 단지 조성 등 귀환 주민 지원 조치 시행 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">2026년 상반기 한국 국외 도피사범 <b>853명</b> 중 <b>40.9%(349명)</b>가 캄보디아 행. 스캠 범죄 거점화 흐름 지속, 동남아 권역 형사사법 공조 강화 논의 확대.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">카자흐스탄 대통령 방한 일정 확인. 한·카자흐스탄 간 외교 접촉 동향 주시 필요.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아·태국 국경 지역(프레아비헤아르 일대)은 현재 군 검문 및 통행 통제가 유지 중이며, 휴전 상태이나 분쟁 완전 종식은 미확인 상태로 해당 지역 방문·접근 시 참고 요. 캄보디아 내 스캠 범죄 거점 확산 흐름은 현지 치안 환경 관련 모니터링 대상.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.chosun.com/international/asia/2026/09/14/3J44MFDV3ZEUZMPO45H7XKNNXM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">→ 태국·캄보디아 휴전 9개월… '파괴의 신'은 여전히 그 자리에</a>
+  </div>
+
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202609131848511699" target="_blank">→ 해외도피 범죄자 40% 캄보디아行… 3년 새 10배 늘었다</a>
+  </div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/PYH20260914003400013?input=1196m" target="_blank">→ 카자흐스탄 대통령 방한</a>
+  </div>
+
+</div>
