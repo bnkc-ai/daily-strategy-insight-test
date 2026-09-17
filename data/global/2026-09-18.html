@@ -1,0 +1,114 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마에서 미국인 사업가 석방 및 말레이시아-미얀마 간 로힝야 난민 송환 협의가 진행 중이며, 카자흐스탄 신도시 개발 프로젝트 및 키르기스스탄 디지털 인프라 협력 MOU 체결 등 중앙아시아 지역 내 투자·협력 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">미얀마 정부가 <b>2026년 9월 16일</b> 구금 중이던 미국인 사업가를 추방 형식으로 석방, "미국과 우호 관계 유지"를 공식 사유로 제시하며 대미 외교 접촉 재개 흐름 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">말레이시아 총리가 로힝야 난민 <b>5,000명</b> 송환 합의를 근거로 미얀마 대통령 공식 초청 의사를 밝혔으며, 이달 말 <b>1차 약 1,500명</b> 자발적 귀환 예정 — 귀환 여건 및 로힝야족 포함 여부는 미확인 상태로 주시 필요.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 알마티 북쪽 <b>880㎢</b> 규모 신도시 '알라타우 시티'가 국가 특별경제구역(SEZ)으로 지정된 가운데, <b>2026년 9월 16일</b> 한-중앙아시아 비즈니스 서밋에서 모빌리티·에너지·디지털 분야 협력 협약 체결.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">키르기스스탄 대통령 직속 국가투자청이 <b>2026년 9월 16일</b> 한국 기업과 디지털 인프라 협력 MOU를 체결, 블록체인·디지털금융 분야 공동 실무그룹 운영 및 교육 세미나 병행 예정.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">한국건설기술연구원이 라오스 비포장도로 개선 <b>2단계 사업(54억원)</b>을 수주, <b>2030년</b>까지 비엔티안특별시 외곽 거점도시로 실증 지역 확대 및 기후탄력성 강화 추진.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마 관련, 말레이시아와의 로힝야 난민 송환 협의가 진행 중이나 국제인권단체는 현재 미얀마 내 안전한 귀환 여건이 조성되지 않았다고 지적한 상태로, 미얀마 내 인도적 상황 및 내전 지속 여부 모니터링 대상. 미얀마 내전 관련 사망자는 <b>10만 명</b>을 초과한 것으로 추산(ACLED 기준).</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260917190100084?input=1195m" target="_blank">→ 미얀마 정권, 미국인 사업가 구금 석 달 만에 석방</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.khan.co.kr/article/202609171730011" target="_blank">→ "철권통치 국가와도 관계 맺는데"···말레이시아, 로힝야 난민 송환 위해 미얀마 군부에 손짓</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609170512&t=NN" target="_blank">→ 현대차그룹, 카자흐스탄 신도시에 '피지컬 AI' 심는다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Economy/article/all/20260917/134688580/1" target="_blank">→ 비토즈, 키르기스스탄 국가투자청과 디지털 인프라 MOU 체결</a>
+  </div>
+  <div class="source-card">
+    <a href="https://biz.heraldcorp.com/article/10877584?ref=naver" target="_blank">→ 건설硏, 라오스에 108억 규모 'K-도로 기술' 수출</a>
+  </div>
+
+</div>
