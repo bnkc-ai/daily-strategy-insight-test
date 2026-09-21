@@ -1,0 +1,98 @@
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">키르기스스탄에서 한국과의 의료·AI·에너지 분야 협력 확대 논의가 진행 중이며, 투자 유치 지원 체계 정비 흐름 주시 필요.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+    </div>
+    <div class="issue-text">2025년 6월, 대통령령 <b>제207호</b>를 통해 AI·소프트웨어·혁신 스타트업 대상 세제 혜택 확대 시행.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+    </div>
+    <div class="issue-text">수출형 IT기업 지원 체계 하이테크파크(HTP) 등록 기업 <b>463개</b>, 매출 전년 대비 <b>50%</b> 증가 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+    </div>
+    <div class="issue-text">한·중앙아시아 정상회의(<b>2025년 9월 16일</b>) 계기로 의료·AI·디지털·에너지 분야 협력 MOU <b>18건</b> 체결.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+    </div>
+    <div class="issue-text">비슈케크 내 KOTRA 거점 및 국가투자청 코리아데스크 설치 추진 중, 한국 기업 전담 창구 마련 예정.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+    </div>
+    <div class="issue-text"><b>2025년</b> 외국인직접투자(FDI) 중 중국 비중 <b>47.5%</b>로 최대 투자국 유지, 한국과의 협력 확대 논의 병행.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">키르기스스탄 국가투자청이 금융 디지털화 분야에서 하나금융그룹·iM금융그룹과 협력 논의를 시작한 것으로 확인됨. 디지털 금융 인프라 구축 관련 후속 실무 협의 진행 여부 모니터링 대상.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://it.chosun.com/news/articleView.html?idxno=2023092170622" target="_blank">→ 키르기스스탄 투자청장 "韓 의료·IT·AI·에너지 기업 진출 적극 지원하겠다"</a>
+  </div>
+
+</div>
