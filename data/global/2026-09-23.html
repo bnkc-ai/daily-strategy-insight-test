@@ -1,0 +1,103 @@
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스에서 건설중장비 수입 규모 변동 및 시장 경쟁 구도 변화가 확인되며, 미얀마 국경 인근 난민 이동 현황도 지속 주시 대상.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">2025년 건설중장비(HS 8429) 수입액이 <b>1억 1,364만 달러</b>로 전년 대비 <b>28.6%</b> 감소, 전반적인 수입 축소 흐름 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">2025년 기준 중국산 점유율 <b>58.6%</b>로 최대 공급국 유지, 일본·한국이 각각 2·3위 공급국으로 경쟁 구도 형성.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">무력분쟁으로 인한 국내 실향민 <b>350만 명</b> 이상 발생, 태국 국경 인근 체류 인원 약 <b>100만 명</b>으로 파악.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">태국</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text"><b>2025년 2월</b> 기준 태국 내 9개 임시보호소에 미얀마 출신 난민 약 <b>8만 명</b> 체류 중, UNHCR 지원 지속.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">라오스 건설중장비 수입 시 공공사업교통부(MPWT) 기술허가 취득 및 관련 증명서(품질·안전·환경) 구비 필요. 중고 장비의 경우 원산지 국가 발급 기술검사증명서 첨부 및 <b>12개월</b> 이내 검사 요건 적용, 수입 절차 사전 확인 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=190&CONTENTS_NO=2&bbsGbn=254&bbsSn=254&pNttSn=244260" target="_blank">→ 라오스 건설중장비 시장동향</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Society/article/all/20260922/134720047/2" target="_blank">→ 신예은, 태국 매솟서 미얀마 난민 아동 만났다…"배우고 꿈 이어가길"</a>
+  </div>
+
+</div>
