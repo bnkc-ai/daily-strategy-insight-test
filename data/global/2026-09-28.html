@@ -1,0 +1,100 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아에서 모바일뱅킹 고도화 프로젝트 추진 확인. 베트남·라오스에서 전통의약 품질관리 실험실 역량강화 교육 시행. 태국 접경지 미얀마 난민 아동 지원 현황 참고 가능.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">캄보디아 금융시장에서 모바일 기반 계좌개설·QR결제 등 비대면 금융 이용 확산 흐름. 한국계 은행의 <b>2026년 상반기</b>까지 모바일뱅킹 고도화 프로젝트 추진 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">캄보디아 내 한국계 은행 법인 총자산 <b>9억 7,927만 달러</b>(2025년 말 기준), 전년 대비 <b>7.0%</b> 증가. 순이익은 전년 대비 약 77% 증가한 1,321만 달러 기록.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">베트남</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text"><b>2025년 9월 1일~17일</b> 베트남·라오스 전통의약 시험·검사 인력 대상 실험실 역량강화 교육 시행. WHO 서태평양지역사무처·현지 기관 협력 체계 하에 진행.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">태국</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">태국 매솟 지역 미얀마 출신 난민·이주민 다수 거주 확인. 교육·돌봄 등 일상 영역에서 지속적 지원 필요 상황으로 현지 NGO 활동 전개 중.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아 금융시장 내 모바일 채널 경쟁 심화 흐름 모니터링 대상. 태국 매솟 접경지 미얀마 난민 집중 거주 현황은 해당 지역 사업·인력 운용 시 참고 요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.etnews.com/20260927000003" target="_blank">→ 단독신한은행, 18년 키운 캄보디아 법인…'SOL' 앞세워 디지털 리테일 공략</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=4085483" target="_blank">→ 한의약진흥원, 베트남·라오스에 한약 품질관리 기술 전수</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.christiantoday.co.kr/news/377592" target="_blank">→ 신예은 기아대책 홍보대사, 태국 찾아 미얀마 난민 아동들과 교류</a>
+  </div>
+
+</div>
