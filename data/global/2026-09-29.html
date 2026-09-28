@@ -1,0 +1,119 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마 라카인주 민간인 공습 피해 발생, 태국 방콕 홍수로 항공 운항 차질 및 재난지역 선포, 캄보디아 온라인 사기 조직 수사 동향 주시 대상.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-재해">재해</span>
+    </div>
+    <div class="issue-text">2025년 9월 28일, 라카인주 짜우따우 시장 일대에 군부 공습 발생, 민간인 최소 <b>33명 사망·36명 부상</b>; 아라칸군은 추가 피해 가능성 언급</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">태국</span>
+      <span class="tag tag-재해">재해</span>
+    </div>
+    <div class="issue-text">2025년 9월 24~27일, 방콕 일대 <b>330㎜</b> 이상 강우로 홍수 발생; 방콕·논타부리·사뭇쁘라깐 재난지역 선포, <b>5만 2,000가구</b> 피해 집계</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">태국</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">방콕 홍수 여파로 수완나품 국제공항 항공편 운항 지연 발생; 일부 편 <b>11시간 30분</b> 이상 지연, 공무원 특별 휴무 명령(9월 28~29일) 시행</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-재해">재해</span>
+    </div>
+    <div class="issue-text">2025년 9월 25일 이후, 미얀마 남부 폭우로 홍수·산사태 발생; 최소 <b>7명 사망·30명 실종</b> 확인</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">2025년 9월 23~24일, 프놈펜에서 온라인 사기 대응 국제회의 개최; 정부의 실제 배후 수사 실효성에 대한 전문가 회의론 지속, 모니터링 대상</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-정치">정치</span>
+    </div>
+    <div class="issue-text">2025년 9월 24일 카스피해 연안 훈련 중 군인 <b>14명 사망</b> 사고 발생; 토카예프 대통령, 국방장관 해임 및 군 개혁 추진 지시</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">태국 방콕 및 인근 3개 주(논타부리·사뭇쁘라깐 포함)는 재난지역으로 선포된 상태로, 현지 이동 및 항공 일정 관련 사전 확인 필요. 미얀마 라카인주는 내전 교전 지역으로 분류되며, 민간인 피해 사례가 지속 보고되는 지역으로 주시 필요. 캄보디아 내 온라인 사기 조직 관련 수사는 진행 중이나 실효성 논란이 이어지고 있어 현지 사업 환경 관련 참고 요.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.news1.kr/world/asia-australia/6303830" target="_blank">→ 내전 격화 미얀마, 군이 반군 지역 시장 공습해 33명 사망</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12162724" target="_blank">→ 한국행 비행기 10시간 넘게 지연…방콕 폭우에 수백명 발 묶여</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news1.kr/world/asia-australia/6303308" target="_blank">→ 캄보디아 "온라인 사기 배후 증거 수집"…실제 책임자 수사엔 회의론</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260928121400104?input=1195m" target="_blank">→ 카자흐스탄 대통령, 훈련 중 군인 14명 사망에 국방장관 해임</a>
+  </div>
+
+</div>
