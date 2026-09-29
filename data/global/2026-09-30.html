@@ -1,0 +1,106 @@
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; display: block; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마 라카인주에서 정부군의 민간 시장 공습으로 대규모 인명 피해 발생. 캄보디아와의 계절근로자 협력 체계 강화 논의 진행 중.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+    </div>
+    <div class="issue-text"><b>2026년 9월 28일</b> 라카인주 캬욱타우 민간 시장에 정부군 전투기 공습 발생, 최소 <b>49~50명</b> 사망·58명 부상 확인</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+    </div>
+    <div class="issue-text">아라칸군(AA)이 라카인주 대부분 장악 중이며, 분쟁으로 약 <b>50만 명</b>이 피란 생활 중인 상황 지속</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+    </div>
+    <div class="issue-text"><b>2026년 4월</b> 민간정부 전환 이후에도 민간인 공격 건수가 4월 121건→5월 223건으로 증가 흐름</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+    </div>
+    <div class="issue-text"><b>2026년 9월 28일</b> 캄보디아 노동직업훈련부 차관 등이 홍천군을 방문, 계절근로자 선발 절차 강화 및 이탈 예방 방안 논의</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마 라카인주 캬욱타우 일대는 교전 지역과 별개인 민간 상업 구역에서도 공습이 발생한 것으로 확인됨. 해당 지역은 인도 국경 인접 교역로로, 인적·물적 이동 관련 동향 주시 필요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.hani.co.kr/arti/international/international_general/1280042.html" target="_blank">→ 미얀마 정부군, 반군 장악 지역 시장 공습해 최소 50명 사망</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.tvchosun.com/site/data/html_dir/2026/09/29/2026092990154.html" target="_blank">→ 미얀마 정부군, 반군 장악지역 시장 폭격…49명 사망</a>
+  </div>
+  <div class="source-card">
+    <a href="https://imnews.imbc.com/news/2026/world/article/6854754_36925.html" target="_blank">→ 미얀마 정부군, 반군 장악 지역 시장 폭격‥최소 49명 사망</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202609291409220011" target="_blank">→ 홍천군, 캄보디아와 손잡고 계절근로자 관리 체계 강화</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kado.net/news/articleView.html?idxno=2075422" target="_blank">→ 홍천군-캄보디아 외국인 계절근로자 협력 강화</a>
+  </div>
+
+</div>
