@@ -1,0 +1,128 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+  .brief-body b { color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-card.last { margin-bottom: 16px; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마 난민 <b>1,476명</b> 말레이시아발 본국 송환 개시, 유엔 중단 촉구 표명. 라오스 내 중국 공군 훈련센터 공식 운영 시작. 카자흐스탄 뷰티 유통 채널 재편 및 규제 변경 흐름 주시 필요.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">말레이시아 정부가 2026년 9월 29일 미얀마 난민 <b>1,476명</b>을 군함 3척에 태워 본국 송환 개시, 총 <b>5,000명</b> 송환 계획 예고. 유엔 인권최고대표는 즉각 중단 촉구 표명.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">말레이시아 내 UNHCR 등록 난민·망명 신청자 약 <b>21만 5,600명</b> 중 로힝야족 약 <b>12만 6,000명</b> 체류 중. 이번 송환 대상 내 로힝야족 포함 여부는 미공개 상태.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">중국과 라오스가 2026년 9월 29일 수도 비엔티안 북쪽 약 <b>45km</b> 반케운 공항에 '중국·라오스 공동지원·훈련 센터' 및 '우호 항공학원' 현판식 개최, 공식 운영 시작. 지부티·캄보디아에 이은 중국의 세 번째 해외 군사 훈련 거점.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 화장품 규제 기술규정(TR CU 009/2011) 개정안이 <b>2026년 10월 28일</b> 발효 예정. 금지 물질 <b>14종</b> 추가 및 표시 의무 강화 포함. 수출 예정 품목 성분·표시 사항 사전 확인 필요.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text"><b>2026년 1월</b>부터 카자흐스탄 부가가치세율이 <b>12%→16%</b>로 인상 시행 중. 현지 판매가격 책정 시 참고 요.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">한국인이 캄보디아 전화금융사기 조직에 청년 2명을 넘긴 혐의 관련 항소심에서 징역 <b>2년 8개월</b> 실형 유지 판결. 캄보디아 내 범죄 단지 연계 인신매매 사건 지속 발생 흐름.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마의 경우, 말레이시아발 난민 송환이 본격화됨에 따라 현지 인도주의 상황 및 사회 불안 요인 지속 모니터링 대상. 캄보디아 내 범죄 단지 관련 인신매매 사건이 반복 발생하고 있어 현지 체류·방문 인력 안전 관련 참고 필요. 카자흐스탄은 <b>2026년 10월 28일</b> 화장품 기술규정 개정안 발효 및 부가가치세율 인상(<b>16%</b>) 시행 중으로, 현지 사업 관련 규제 변경 사항 확인 필요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260930113300084?input=1195m" target="_blank">→ 말레이, 미얀마 난민 본국 송환 개시…유엔 "즉각 중단 촉구"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8674617&ref=A" target="_blank">→ 말레이시아, 미얀마 난민 1,400여 명 본국 송환…유엔 "즉각 중단해야"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20260930_0003808831" target="_blank">→ 中, 라오스 공군 훈련센터…지부티·캄보디아 이어 3번째 해외 군사거점</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8674935&ref=A" target="_blank">→ 캄보디아 범죄 단지에 청년 보낸 30대, 항소심도 실형</a>
+  </div>
+  <div class="source-card">
+    <a href="http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=244375" target="_blank">→ 카자흐스탄 뷰티 유통지도가 바뀐다… K-뷰티의 승부처는 '전문몰'</a>
+  </div>
+
+</div>
