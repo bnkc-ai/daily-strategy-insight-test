@@ -1,0 +1,110 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스 반쿤 비행장에 중국군 첫 해외 공군 거점 구축, 인도차이나 역내 안보 지형 변화 주시 대상. 키르기스스탄에서는 한국 주도 공공보건·디지털 교육 협력 사업 진행 중.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">라오스 수도 비엔티안 북쪽 <b>약 64km</b> 반쿤 비행장 인근에 중국·라오스 군사 합동 지원·훈련센터 개소, 중국 인민해방군 해외 첫 공군 거점 운용 시작.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">해당 거점은 지부티 해군기지·캄보디아 레암 항구에 이은 중국의 세 번째 해외 군사 지원 시설로, 태국 접경 인접 위치로 역내 작전 반경 확장 가능성 주시 대상.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">베트남</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">싱가포르 ISEAS 연구소, 반쿤 거점으로 인해 베트남 주변 전략 접근로 내 중국 영향력 확대 가능성 지적, 역내 복합 운송망 운용 환경 변수로 거론.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">서울국제친선협회, <b>2025~2027년</b> 디지털 제조 교육 확산 사업 일환으로 키르기스스탄 교육부·국립기술대 관계자 대상 한국 초청 연수 진행.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">한국건강관리협회, 제티오구즈군 공공보건 증진사업 <b>1차년도</b> 현지 모니터링 완료, 학교 식수·위생 개선 및 카타이 마을 보건지소 신규 건립.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">라오스 반쿤 비행장 내 중국군 거점 운용과 관련, 인도차이나 역내 영공 감시 강화 또는 군사적 긴장 고조 시 항공 화물 노선 조정·통관 절차 변화 가능성이 거론되고 있어 모니터링 대상으로 분류. 중국 인민해방군 전투기의 상시 순환 배치 여부 및 주변국 외교·안보 당국의 후속 대응 동향 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.g-enews.com/view.php?ud=20261001092259209020990b2dc5_1" target="_blank">→ 라오스에 해외 첫 공군 거점 연 중국군…인도차이나 세력권 확장</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261001182000371?input=1195m" target="_blank">→ 서울국제친선협회, 키르기스스탄 초청 연수 진행</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.bokuennews.com/news/article.html?no=285029" target="_blank">→ 건협, 키르기스스탄 종료선 모니터링단 파견</a>
+  </div>
+
+</div>
