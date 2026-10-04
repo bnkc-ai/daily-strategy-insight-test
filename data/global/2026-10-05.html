@@ -1,0 +1,105 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">카자흐스탄에서 미·중 간 텅스텐 광물 공급망 경쟁이 본격화되고 있으며, 미얀마에서는 말레이시아 강제 송환 인원 약 1,500명이 양곤에 도착해 인도주의적 상황 주시 필요.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">미국 코브캐피탈이 카자흐스탄 카라간다 지역 텅스텐 광상 지분 <b>70%</b>를 인수, 총 <b>11억 달러</b> 투입 및 <b>2028년</b> 상업 생산 목표로 개발 추진 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">중국계 자신 인터내셔널이 카자흐스탄 보구티 광산에서 <b>2025년 4월</b>부터 상업 가동 돌입, 미국 프로젝트 대비 선점 구도 형성.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">글로벌 텅스텐 정광 가격이 중국 수출통제 이후 <b>230%</b> 이상 상승, 카자흐스탄 내 미·중 광물 투자 경쟁 확대 흐름.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">말레이시아가 강제 송환한 미얀마 국적인 약 <b>1,500명</b>이 <b>2026년 10월 4일</b> 양곤 도착, 유엔 및 인권단체의 박해·징집 우려 제기.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">단계적 송환 대상 총 <b>5,000명</b> 중 1차 도착 완료, 말레이시아 이민억류 센터 내 추가 <b>1만 388명</b> 유치 중으로 송환 절차 지속 예정.</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">미얀마의 경우, 유엔 난민기구(UNHCR) 및 인권단체가 현지 치안·인도주의 상황의 유동성을 이유로 송환에 반대 입장을 표명한 상태로, 미얀마 내 인력·사업 관련 동향 모니터링 대상. 카자흐스탄 텅스텐 광물 개발과 관련하여 현지 자원 민족주의 확산 및 물류망(카스피해 횡단 루트) 변화 여부 주시 필요.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261004_0003814067" target="_blank">→ 말레이시아가 추방한 미얀마 국적인 1500명, 양곤 도착</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.g-enews.com/view.php?ud=2026100416503045000c8c1c064d_1" target="_blank">→ "中 텅스텐 독점 깬다"… 美 자본, 중앙아시아 '카자흐스탄' 정조준</a>
+  </div>
+
+</div>
