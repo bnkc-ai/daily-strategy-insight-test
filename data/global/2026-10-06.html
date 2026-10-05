@@ -1,0 +1,89 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아에서 한국계 편의점의 주유소 결합형 출점 확대가 진행 중이며, 국내 평택 지역에서 카자흐스탄·키르기스스탄 국적자 간 집단 충돌 사건이 발생해 경찰 수사 진행 중.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">한국계 편의점 브랜드가 현지 에너지기업 BVM페트롤리엄과 MOU 체결 후 주유소 결합형 점포를 개점, 연내 <b>70개</b> 점포 운영 및 향후 <b>50개</b> 결합형 점포 확대 계획 추진 중.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">국내 평택시 포승읍에서 <b>2026년 10월 3일</b> 심야, 카자흐스탄·키르기스스탄 국적자 무리 간 집단 충돌 발생, 경찰 수사 및 특별 방범 활동 전개 중.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">평택 집단 충돌 사건은 국내 발생 사안이나, 카자흐스탄·키르기스스탄 국적자 간 갈등 구도가 확인된 사례로, 해당 지역 출신 재외 커뮤니티 동향 모니터링 대상.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12168472" target="_blank">→ K편의점 캄보디아에도 간다...이마트24 주유소 결합형 매장</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12168400" target="_blank">→ 평택 외국인 집단 난투극…중앙아시아 무리 간 충돌 가능성</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/2026100539517" target="_blank">→ 평택 어린이공원서 외국인 집단 난투극…'코드 제로 발령'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Society/article/all/20261005/134788295/1" target="_blank">→ 각목-야구배트까지…평택 어린이공원서 외국인 집단 난투극</a>
+  </div>
+
+</div>
