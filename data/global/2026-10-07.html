@@ -1,0 +1,100 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마·말레이시아 간 난민 송환 외교 협의 진행 중이며, 카자흐스탄에서는 디지털 금융 분야 외국 기업의 시장 진출 논의가 구체화되는 흐름.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">민 아웅 흘라잉 미얀마 대통령이 수일 내 말레이시아를 방문, 난민 송환 문제 논의 예정. 말레이시아는 <b>2025년 9월 말</b> 1차로 <b>1,476명</b>을 송환했으며, 총 <b>5,000명</b> 송환 계획 추진 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">말레이시아 내 UNHCR 등록 난민·망명 신청자 약 <b>21만 5,600명</b> 중 약 <b>58%</b>가 로힝야족으로, 유엔 등 국제사회의 강제 징집 우려 제기 지속. 모니터링 대상.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 금융시장규제개발청(ARDFM)과 외국 금융사 간 디지털 금융·금융상품 토큰화 협력 논의 진행. 카자흐스탄은 국가 차원의 AI 생태계 및 디지털 인프라 확충 추진 중.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">라오스에서 전기이륜차 전환 및 배터리 교환 인프라 구축 사업 착수. <b>2028년</b>까지 인프라 구축 후 <b>2029년</b>부터 <b>10년간</b> 약 <b>30만 8,000톤</b> 온실가스 감축 목표.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마 난민 송환 관련, 유엔 및 국제 인권단체의 우려 표명이 지속되고 있으며 말레이시아 내 로힝야족 관련 사회적 갈등 흐름이 병존하는 상황. 해당 지역 동향 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261006183300084?input=1195m" target="_blank">→ 미얀마 대통령, 며칠내 말레이 방문…"난민송환 논의할 것"</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.press9.kr/news/articleView.html?idxno=83769" target="_blank">→ 한화생명, 카자흐스탄 금융시장 진출 검토…디지털금융·토큰화 협력 모색</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.thedailypost.kr/news/articleView.html?idxno=116032" target="_blank">→ 핑거, 라오스 전기이륜차 ITMO 사업 추진…국제감축 투자지원 기업 선정</a>
+  </div>
+
+</div>
