@@ -1,0 +1,96 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">카자흐스탄에서 테더·중앙은행 간 텡게 스테이블코인 MOU 체결 및 디지털 금융 인프라 논의 진행. 미얀마 대통령의 말레이시아 방문을 통한 이주민 송환 협의 동향 확인.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">2026년 10월 7일, 테더(Tether)·카자흐스탄 중앙은행(NBK)·알라타우시 관리청 간 텡게 연동 스테이블코인 및 자산 토큰화 관련 MOU 체결. 발행 확정 아닌 탐색 단계이며, 일정·블록체인·준비금 구조는 미정.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 중앙은행, <b>2026년 5월 1일</b> 디지털 자산 포괄 규칙 도입. 화폐 기반 스테이블코인·토큰화 실물자산·전통 금융상품 디지털 버전을 디지털 금융자산으로 인정. 규제 체계 정비 흐름 지속.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">2026년 10월 7일, 민 아웅 흘라잉 미얀마 대통령이 이틀 일정으로 말레이시아 방문. 말레이시아의 미얀마 이주민 본국 송환 계획과 연계된 외교 접촉으로 확인.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">카자흐스탄 중앙은행의 디지털 자산 규제 체계(<b>2026년 5월 1일</b> 시행)는 스테이블코인·토큰화 자산 관련 사업 환경 변화와 직결되므로 모니터링 대상. 테더 MOU는 탐색 단계 문서로, 상업적 발행 주체·일정 등 핵심 사항 미확정 상태 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.wikitree.co.kr/articles/1164668" target="_blank">→ 테더, 카자흐스탄 중앙은행과 텡게 스테이블코인 MOU…발행 확정은 아닌 탐색 단계</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.gukjenews.com/news/articleView.html?idxno=3715293" target="_blank">→ 미얀마 대통령, 이틀 간 말레이시아 방문</a>
+  </div>
+
+</div>
