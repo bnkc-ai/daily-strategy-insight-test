@@ -1,0 +1,112 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마에서 미국의 대(對)군정 직접 접촉이 확인되며 외교 기조 전환 흐름 포착. 카자흐스탄에서는 농업 분야 장기 협력 프로젝트 착수 동향 주시 필요.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">미 국무부 정보조사국 차관보가 <b>2026년 9월 15~16일</b> 네피도에서 민 아웅 흘라잉 대통령과 회담, <b>2021년</b> 쿠데타 이후 최고위급 접촉 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">미국 측 주요 의제는 억류 미국인 석방, 온라인 사기 거점 폐쇄, 중희토류 매장지 접근 방안으로, 대미얀마 정책의 실리 중심 전환 흐름 포착.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-정치">정치</span>
+    </div>
+    <div class="issue-text">주요 희토류 매장지가 소수민족 무장단체 통제 지역에 위치, 실질적 자원 접근까지 복수의 변수 존재 — 모니터링 대상.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 농업부 산하 연구기관과 한국 기업 간 씨감자 대량생산 공동사업 착수, 정부 투자 규모 약 <b>1,000만 달러</b>, 협력 기간 <b>20년</b>.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text"><b>2027년</b> 소괴경 약 48톤 생산 개시 후 <b>2030년</b> 연간 약 3,000톤 목표, 중앙아시아 농업 종자 시장 내 공급 거점화 추진 동향 확인.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마 관련: 미 국무부 차관보 방문(<b>2026년 9월 15~16일</b>) 직후 미얀마군의 라카인주 시장 공습이 발생, 50명 이상 사망 보고(유엔 인권 당국자 발표). 현지 무력 충돌 상황 지속 중으로, 미얀마 내 인적·물적 이동 관련 동향 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261008130900009?input=1195m" target="_blank">→ 美, 미얀마 군정과 직접 접촉…고립정책 전환 (연합뉴스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/News/Read?newsId=04014726645610952&mediaCodeNo=257" target="_blank">→ 5년간 제재하던 미얀마 군부와 美 돌연 협상…속내는 '희토류'? (이데일리)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20261008010002647" target="_blank">→ 비트로시스, 카자흐스탄과 20년 '씨감자 동맹'…2030년 3000톤 생산 (아시아투데이)</a>
+  </div>
+
+</div>
