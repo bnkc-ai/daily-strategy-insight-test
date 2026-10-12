@@ -1,0 +1,122 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">동남아 지역에서 스캠 범죄 조직의 베트남·라오스 등 인접국 거점 이동 흐름이 확인되며, 카자흐스탄에서는 CPC 원유 운송 경로 다변화 논의 및 장애인 고용 정책 현황이 파악됨.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">베트남</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">캄보디아 단속 강화 이후 스캠 범죄 조직의 베트남 이동이 확인되며, <b>2026년 1~8월</b> 베트남 내 한국인 피의자 검거 건수가 전년 연간 대비 약 <b>3배</b> 수준으로 증가. 하노이·박닌·호찌민 등지에서 현지 당국 적발 사례 지속 발생.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">동남아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">스캠 조직이 캄보디아·라오스·태국·필리핀 등 동남아 국가를 순회하는 소규모 점조직 형태로 진화 중. AI 활용으로 소수 인원 운영이 가능해져 국가 간 이동 속도 가속화 흐름.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">범정부 TF의 피의자 <b>73명</b> 송환 및 <b>14억3,400만 원</b> 상당 추징보전 조치 시행. 피해자 실제 환부액은 재판 진행 중으로 미공개 상태.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">CPC의 <b>2025년</b> 원유 운송량 <b>7,050만t</b> 중 카자흐스탄산 <b>6,380만t</b> 차지. 러시아 경유 의존도 완화를 위한 BTC 송유관 이용 확대 추진 중이며, 장기적으로 연간 <b>700만t</b> 수송 목표 언급.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text"><b>2025년</b> 기준 등록 장애인 <b>76만600명</b> 이상. 노동가능 연령 장애인 취업률 약 <b>30%</b>로, 장애인 취업자 평균 임금은 전국 평균 임금의 약 <b>60%</b> 수준. 고용 할당제(50인 이상 사업장 2~4%) 운영 중.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text"><b>2026년 10월 12일</b> 청와대에서 멜리스 마마달리예프 주한 키르기스스탄 대사 신임장 제정식 진행. 한-키르기스스탄 외교 채널 공식 가동 확인.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">동남아 지역 내 스캠 범죄 조직이 베트남·라오스·태국·필리핀 등으로 거점을 분산·이동하는 흐름이 확인됨. 해당 지역 체류 인력 및 현지 교민 관련 동향 모니터링 대상. 카자흐스탄 CPC 원유 운송 관련 EU의 러시아산 에너지 규제(<b>규정 2026/261</b>) 동향은 카자흐스탄 수출 경로에 간접 영향 가능성이 있어 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202610112112294110" target="_blank">→ [단독] "불법인 것 알지?" 캄보디아 잠잠해지니 베트남서 스캠 검거 3배 급증</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261012154400001?input=1195m" target="_blank">→ 박성훈 "캄보디아 범죄조직 73명 송환에도 피해회복 미지수"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.tokenpost.kr/news/international/421533" target="_blank">→ CPC 2025년 운송량 7050만t…카자흐스탄산이 대부분</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20261012010002994" target="_blank">→ 카자흐스탄 장애인 75만명 시대…일회성 지원 넘어 경제적 자립 과제</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/PYH20261012131100013?input=1196m" target="_blank">→ 이재명 대통령과 주한 키르기스스탄 대사</a>
+  </div>
+
+</div>
