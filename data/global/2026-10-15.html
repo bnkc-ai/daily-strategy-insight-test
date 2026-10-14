@@ -1,0 +1,109 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; padding: 16px; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마 북부 코캉 지역 연계 범죄조직에 대한 중국 법원 판결이 확정되었으며, 키르기스스탄은 농민 보호를 위한 사과·감자 수입 한시 금지 방안을 추진 중. 카자흐스탄에서는 사과 수입 금지 조치가 시행 중.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">미얀마 북부 코캉 지역 기반 웨이 일가 범죄조직 핵심 인물 3명에게 중국 법원이 사형 선고. 관련 자금 규모 <b>122억 위안(약 2조 4,419억 원)</b> 이상으로 확인.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">해당 조직은 보이스피싱·온라인 사기·불법 도박·마약 판매 등 복합 범죄 운영. <b>2024년 1월</b> 주요 인물 중국 압송 후 재판 진행.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">키르기스스탄 정부, 수확기 가격 보호 목적으로 사과는 <b>2027년 2월 1일</b>까지, 감자는 <b>2027년 3월 1일</b>까지 수입 한시 금지 방안 추진 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">해당 조치가 유라시아경제연합(EAEU) 자유 교역 조약 위배 여부 논의 중. EAEU 29조 예외 조항 적용 가능성 검토 대상.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">카자흐스탄, <b>2026년 9월</b>부터 사과 수입 금지 조치 시행 중. EAEU 29조 근거로 회원국산 포함 전면 금지, <b>2026년 12월 31일</b>까지 적용.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">키르기스스탄의 사과·감자 수입 금지 방안은 현재 추진 단계로, EAEU 조약 위배 여부에 대한 법적 검토가 진행 중. 최종 시행 여부 및 적용 범위 확정 전까지 모니터링 대상. 카자흐스탄의 사과 수입 금지 조치는 <b>2026년 12월 31일</b>까지 시행 예정으로, 해당 지역 농산물 교역 관련 업무 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며, 글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://nownews.seoul.co.kr/news/newsView.php?id=20261014601022&wlog_tag3=naver" target="_blank">→ 中서 사형 선고받은 '보이스피싱 황제'…미얀마서 2조원대 사기·감금</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261014125000009?input=1195m" target="_blank">→ 키르기스스탄, 농민보호 위해 사과·감자 수입금지 추진</a>
+  </div>
+
+</div>
