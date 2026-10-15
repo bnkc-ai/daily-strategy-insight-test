@@ -1,0 +1,105 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마에서 군부의 강제 징집·납치 정황이 보고되며 청년층 이탈 및 노동력 감소 흐름 지속. 캄보디아 스캠 피해 신고 건수 대폭 감소 추세 확인.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">미얀마 군부 관계자 및 범죄 조직이 결탁해 청년을 길거리에서 납치, 군부대에 넘기는 인신매매 정황이 BBC 보도를 통해 폭로됨. 앰네스티·HRW 등 국제인권단체도 관련 사실 비판.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-정치">정치</span>
+    </div>
+    <div class="issue-text"><b>2024년</b>부터 시행된 강제 징집법 이후 징집 회피 청년의 해외 이탈 증가로 국내 노동력 부족 심화 흐름. 주시 필요.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-재해">재해</span>
+    </div>
+    <div class="issue-text">북부 카친주 난문 지역 교회 2곳이 군부 연계 민병대(SNA)의 군사훈련 거점으로 사용됨. <b>2024년</b> 이후 무력 충돌 격화로 기독교인 약 400가구 중 80가구만 잔류.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">캄보디아 스캠 관련 피해 신고 건수가 <b>94%</b> 감소한 것으로 외교부 집계. 외교부는 성과 직원에 포상 시행.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마 카렌주·양곤 등 주요 도시에서 야간 외출 자제 분위기가 일상화된 것으로 보고됨. 현지 체류 인원이 있을 경우 야간 이동 관련 동향 모니터링 대상.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261015_0003827836" target="_blank">→ "해 지면 밖에 못 나간다"…'납치 징병' 공포에 숨죽인 미얀마 남성들</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/world/2026/10/15/2026101521582210116" target="_blank">→ 길거리 청년 납치해 군부대로…"현대판 노예제" 공포에 떠는 이 나라</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.christiantoday.co.kr/news/377927" target="_blank">→ 미얀마 군부 연계 민병대, 교회까지 군사시설로 사용</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news1.kr/diplomacy/defense-diplomacy/6321422" target="_blank">→ 캄보디아 스캠 피해 신고 94% 감소…외교부, 성과 직원에 포상</a>
+  </div>
+
+</div>
