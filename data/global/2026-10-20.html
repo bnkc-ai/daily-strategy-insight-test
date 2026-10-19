@@ -1,0 +1,99 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.no-border { border-left: none; background: #F1EFE8; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.no-border .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스에서 한국 지자체·캐피탈사의 협력·진출 동향 확인. 캄보디아에서는 캐피탈사의 사업 전략 전환 흐름 주시 대상.</div>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">국내 캐피탈사 iM캐피탈의 라오스 현지법인(iMLC)이 <b>2025년 상반기</b> 순이익 <b>16억 원</b>을 기록하며 안정적 실적 유지 중. 전기차 금융 상품 확대 흐름.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">iM캐피탈 캄보디아 법인(캠캐피탈), 부동산 시장 침체 이후 모기지 중심에서 이동수단 구매 대출·해외 취업자 대출로 사업 중심 전환 흐름.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-정치">정치</span>
+    </div>
+    <div class="issue-text">iM캐피탈, 현지 정치·경제 환경 불안정을 이유로 미얀마 신규 진출 보류 중. 환경 안정화 시 우선 진출 검토 예정으로 모니터링 대상.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">전남 영암군, <b>2025년 10월 15일</b> 라오스 노동사회복지부와 계절노동자 교류 MOU 체결. <b>2026년 상반기</b> 농가 배치 추진 예정.</div>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아 부동산 시장 침체 지속에 따른 현지 모기지 관련 금융 수요 위축 흐름이 확인됨. 동 지역 부동산 담보 관련 사업 구조 검토 시 참고 요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.dongponews.net/news/articleView.html?idxno=61130" target="_blank">→ iM캐피탈, '라오스 성공·캄보디아 맞춤 전략'으로 동남아 시장 공략 박차</a>
+  </div>
+  <div class="source-card">
+    <a href="https://sports.donga.com/region/article/all/20261019/134863853/1" target="_blank">→ 영암군, 라오스와 계절노동자 교류 협약…내년 농가 배치 추진</a>
+  </div>
+
+</div>
