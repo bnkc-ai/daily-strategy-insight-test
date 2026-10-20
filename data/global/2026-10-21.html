@@ -1,0 +1,112 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마에서 아웅산 수치 처우 변화 및 아세안 복귀 논의가 진행 중이며, 캄보디아·라오스·미얀마 대상 한국 정부 탄소감축 시범사업의 10년간 실적 부재가 국정감사에서 지적됨. 라오스에서는 한국 에너지기업의 마이크로그리드 R&D 착수 및 지방정부 간 협력 협약 체결.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">2026년 10월 19일, 미얀마 내무부 관계자가 네피도 가택연금 장소를 방문해 찰스 3세 영국 국왕이 보낸 서적 <b>2권</b> 및 서한을 아웅산 수치(81)에게 전달, 수치 근황 사진 공개.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">미얀마 정권은 <b>2026년 4월</b> 군사정부에서 민간정부로 체제 전환 후 아세안 복귀를 추진 중이며, <b>2026년 11월</b> 필리핀 마닐라 아세안 정상회의에서 복귀 여부 논의 예정.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">한국 산림청이 캄보디아·미얀마·라오스에서 <b>10년간 67억 원</b>을 투입한 탄소감축 시범사업의 확보 실적이 <b>0톤</b>으로 확인, 2026년 국정감사에서 사업 재검토 필요성 지적.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">2026년 10월 20일, 한-라오스 에너지 국제공동 R&D 착수보고회가 비엔티안에서 개최되고, 나주시와 사완나켓주 간 에너지산업·경제협력 MOU 체결, 한국 에너지기업 <b>9개사</b> 추가 참여.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">라오스 사업지역 내 수력발전소 댐 건설로 개발사가 별도 탄소권을 주장하는 상황 발생, 탄소감축 사업 이행 환경 관련 모니터링 대상.</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">미얀마는 2021년 쿠데타 이후 미국 정부 제재 대상 상태가 유지 중이며, 민주진영 통합정부는 현 정권 체결 사업의 승계 불인정 입장을 표명한 바 있어 현지 사업·계약 관련 법적 연속성 확인 필요. 라오스 탄소감축 시범사업 지역 내 제3자 탄소권 분쟁 발생 사례가 국정감사에서 확인된 바, 라오스 내 유사 사업 구조 참고 요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://biz.heraldcorp.com/article/10908981?ref=naver" target="_blank">→ 찰스 3세가 수치에 보낸 책 2권과 편지…미얀마 정권의 속내는</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/society/2026/10/20/2026102015175848493" target="_blank">→ 캄보디아·미얀마·라오스 해외 탄소감축사업 10년 간 성과 '0'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261020_0003833665" target="_blank">→ 나주 에너지기업 9곳, 라오스서 기술 실증…동남아 진출 시동</a>
+  </div>
+
+</div>
