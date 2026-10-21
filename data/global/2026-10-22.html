@@ -1,0 +1,113 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스에서 한국 지자체·금융사와의 협력 확대 흐름이 확인되며, 카자흐스탄에서는 한국 의료기관의 원격의료 네트워크 구축이 진행 중.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">한국 나주시가 라오스 노동사회복지부와 계절근로자 파견 MOU를 갱신, 모집 지역을 기존 <b>3개</b>에서 <b>5개</b>로 확대하고 보험 가입 의무화 등 근로자 보호 조항 강화.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">라오스 계절근로자 도입 규모, <b>2023년 360명</b>에서 <b>2026년 1,100여 명</b>으로 증가; <b>2027년</b>에는 400여 농가에서 1,500명 수요 신청 접수.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">KB캐피탈, 인도네시아 법인 지분을 KB금융 신설 중간지주사로 이전 예정; 이후 직접 운영 해외 법인은 라오스 법인(KB KOLAO LEASING, 지분 <b>51%</b>)으로 단일화.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">라오스 정부의 전기차 특소세 인하 정책 지속 중; 현지 자동차 할부금융 시장 내 전기차·중고차 부문 확대 흐름 주시 대상.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">국제성모병원, 아티라우주립 어린이병원 내 원격의료센터 개소; 서카자흐스탄주·망기스타우주에 이어 카자흐스탄 서부 <b>3개 주</b> 원격의료 협력 네트워크 구축 완료.</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">라오스 관련 금융사 해외 법인 재편 기사(KB캐피탈)는 특정 기업의 전략 내용을 포함하고 있으며, 라오스 현지 자동차 할부금융 시장 구조 및 전기차 정책 동향은 현지 금융·산업 환경 파악 시 참고 요.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261021_0003835080" target="_blank">→ "농촌 일손 해소"…라오스 근로자 1500명, 나주시에 온다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://biz.heraldcorp.com/article/10910212?ref=naver" target="_blank">→ 나주시, 라오스 계절근로 협력확대…농촌 인력난 해소 나선다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.bloter.net/news/articleView.html?idxno=676241" target="_blank">→ KB캐피탈, 인니 떼고 라오스에 '올인'…시험대 오른 리밸런싱</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.bokuennews.com/news/article.html?no=285900" target="_blank">→ 국제성모병원, 카자흐스탄 아티라우주에 원격의료센터 개소</a>
+  </div>
+
+</div>
