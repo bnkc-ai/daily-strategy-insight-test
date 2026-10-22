@@ -1,0 +1,126 @@
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-card.last { margin-bottom: 16px; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마 정권의 대외 접촉 확대 및 아세안 복귀 논의 진행 중. 키르기스스탄에서 한국계 금융사의 현지 금융회사 인수 계약 체결, 라오스에서 한·라오스 에너지 R&amp;D 착수 등 중앙아시아·동남아 지역 동향 주시 필요.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-정치">정치</span>
+    </div>
+    <div class="issue-text">2026년 10월 22일, 미얀마 정권이 가택연금 중인 아웅산 수치 고문과 아들 킴 에어리스의 통화를 <b>2021년 2월 쿠데타 이후 약 5년여 만에</b> 허용, 외부 접촉 범위 점진적 확대 흐름</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text"><b>2026년 4월</b> 민간정부 출범 이후 미얀마 정권은 아세안 관계 정상화 추진 중이며, <b>2026년 11월</b> 필리핀 마닐라 아세안 정상회의에서 미얀마 복귀 문제 논의 예정</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">미국 국무부 대표단이 <b>2026년 9월 중순</b> 미얀마를 방문해 흘라잉 대통령과 면담, <b>2026년 10월 초</b> 도쿄에서 비공개 회담 진행 등 미·미얀마 대화 재개 흐름</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">JB우리캐피탈이 키르기스스탄 현지 금융회사 코르키크레딧·코르키리싱 모회사 지분 <b>100%</b> 매매 계약 체결, 연내 현지 금융당국 인가 절차 완료 후 자회사 편입 예정</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">키르기스스탄은 전체 인구의 약 <b>70%</b>가 30대 이하이며, 최근 실질 GDP 성장률이 연 <b>10%</b> 이상 기록 중으로 금융·소비 시장 성장 모니터링 대상</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text"><b>2026년 10월 20일</b> 라오스 비엔티안에서 한·라오스 에너지 국제공동 R&amp;D 착수보고회 개최, 태양광·ESS·마이크로그리드 기술 개발 및 라오스 전력청(EDL)과 협력 체계 구축 추진</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">미얀마 정권은 2026년 4월 민간정부 출범 이후 아세안 복귀 및 국제 관계 정상화를 추진 중이나, 아세안이 2021년 합의한 5개 항목 이행 여부는 미확인 상태로 정치적 불확실성 지속 주시 필요. 키르기스스탄 금융사 인수는 현지 금융당국 인가 절차 완료 전으로, 인허가 진행 경과 모니터링 대상.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261022190700084?input=1195m" target="_blank">→ 미얀마, 수치 고문과 아들 5년여만 첫 통화 허용…처우개선 홍보 (연합뉴스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ytn.co.kr/_ln/0104_202610222052269100" target="_blank">→ 미얀마, 수치 고문과 아들 5년여 만에 통화 허용...처우 개선 홍보 (YTN)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankookilbo.com/news/article/A2026102220440002071?did=NA" target="_blank">→ 아웅산 수치, 5년 만에 아들과 통화…"미얀마 정부가 가족 정기 접촉 허용해야" (한국일보)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sedaily.com/article/20104907?ref=naver" target="_blank">→ JB금융, 키르기스스탄 금융사 인수 추진 (서울경제)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8692835&ref=A" target="_blank">→ JB금융, 키르기스스탄 금융회사 인수…중앙아시아 진출 추진 (KBS)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sentv.co.kr/article/view/sentv202610220165" target="_blank">→ 현대쏠라텍, 한·라오스 에너지 국제공동 R&amp;D 착수 (서울경제TV)</a>
+  </div>
+
+</div>
