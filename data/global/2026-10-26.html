@@ -1,0 +1,116 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">미얀마에서 미국·아세안의 외교적 관여 움직임이 가시화되고 있으며, 캄보디아에서는 한국인 대상 납치·감금 사건이 증가 추세. 카자흐스탄·키르기스스탄·우즈베키스탄 등 중앙아시아 금융시장 동향도 주시 대상.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <div class="issue-text">미국이 쿠데타 이후 최고위급 접촉을 재개, <b>2025년 9~10월</b> 한 달 새 네피도·도쿄에서 두 차례 회동 진행. 희토류 협력 및 온라인 사기 단속 공조 논의 병행 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <div class="issue-text">아세안, <b>다음 달</b> 필리핀 마닐라 정상회의에서 미얀마의 대표권 회복 여부 본격 논의 예정. 태국 외교장관은 미국의 관여 정책을 긍정적으로 평가.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">여행경보 발령 10개국 내 한국인 사건·사고가 <b>2025년</b> 4,016건으로 전년 대비 <b>48.3%</b> 증가. 캄보디아 증가분이 전체의 <b>43.5%</b>를 차지하며 납치·감금·실종 의심 건수 급증.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">카자흐스탄 소액금융 법인이 <b>2024년 말</b> 기준 대출자산 약 560억 원, 순이익 15억 원 이상 시현 후 <b>2025년</b> 은행업으로 전환 완료. SME·자영업자 시장 공략 및 모바일뱅킹 고도화 추진 중.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text"><b>2022년</b> 진출한 현지 법인이 설립 <b>2년</b> 만에 흑자 전환. <b>2025년</b> 반기말 기준 당기순이익 전년 말 대비 <b>165%</b> 이상 성장, 신규 리스 상품 출시 준비 중.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">우즈베키스탄</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <div class="issue-text">외국계 소액금융(MFO) 인가 지연으로 리스업 전환 추진. <b>2025년 7월</b>부터 신차 리스 영업 개시, 단계적으로 의료기기·중고차 등으로 상품군 확대 예정.</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">캄보디아에서 한국인 대상 납치·감금·실종 의심 사건이 증가 추세로, 현지 출장 또는 방문 시 외교부 해외안전여행 홈페이지 사전 확인 권장. 우즈베키스탄의 경우 외국계 소액금융(MFO) 인가 지연 상황이 지속되고 있어 현지 라이선스 관련 동향 모니터링 대상.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20261025010008448" target="_blank">→ 태국 "美의 미얀마 관여 환영"…아세안, 내달 미얀마 복귀 여부 논의</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12185331" target="_blank">→ "해외여행 전 확인하세요"…한국인 사건·사고 48% 급증</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=202610232155043410dd55077bc2_18" target="_blank">→ 손대진 BNK캐피탈 대표, 카자흐스탄 리스·소액대출 성장 기반 SME 공략 [캐피탈사 해외법인 전략 ③]</a>
+  </div>
+
+</div>
