@@ -1,0 +1,120 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <!-- 오늘의 지역 요약 -->
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">캄보디아 시아누크빌에서 미국 크루즈선 운항 중단 및 승객 강제 하선 사태 발생. 카자흐스탄에서는 노후 상하수도 개선 수요를 배경으로 한국 기업과의 물관리 분야 협력 협약 체결 흐름 확인.</div>
+  </div>
+
+  <!-- 주요 이슈 -->
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">2026년 10월 28일, 시아누크빌 항구 정박 중인 미국 크루즈 '오디세이'호가 운항 중단을 선언, 승객 <b>203명</b>·승무원 <b>156명</b>에게 하선 통보 발생</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">운영사 '빌라 비 레지던스'는 연료비 급등(객실당 월 <b>1,800달러 → 최대 8,000달러</b>)을 원인으로 제시, 구조조정 진행 중 발표</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">하선 승객 일부는 귀국, 나머지는 시아누크빌 체류 중이며 쁘레아시아누크주 당국이 상황 파악 중 — 모니터링 대상</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">2026년 10월 27일, 카자흐스탄 폐기물관리협회(카즈웨이스트)와 경북 물산업선도기업협의회 간 물관리 분야 업무협약 체결, 관련 시장 규모 약 <b>3조 원</b> 예상</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">카자흐스탄 내 노후 상하수도 시설 개선 및 물 부족 대응을 위한 첨단 물관리 기술 도입 추진 중 — 참고 요</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">한전·남동발전 등이 참여한 미얀마 쿡스토브 사업의 온실가스 감축량이 유엔 감독기구에 의해 <b>약 110만 t → 64만 t</b>으로 하향 재산정, 신규 사업 중단 결정</div>
+  </div>
+
+  <!-- 참고 시 유의점 -->
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <div class="note-content">캄보디아 시아누크빌 항구에서 미국 크루즈선 운항 중단에 따른 외국인 다수 체류 상황이 발생한 바, 해당 지역 방문 또는 체류 관련 일정이 있을 경우 현지 상황 사전 확인 필요. 카자흐스탄 물관리 시장은 협약 체결 단계로, 실제 사업 참여 여부 및 조달 구조는 추가 확인 필요.</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며, 글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</div>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261028193200084?input=1195m" target="_blank">→ 세계일주 美크루즈, 캄보디아서 운항 중단…승객 200여명 쫓겨나 (연합뉴스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kukinews.com/article/view/kuk202610280205" target="_blank">→ 경북도, 3조원 카자흐스탄 물시장 진출 교두보 마련 (쿠키뉴스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.khan.co.kr/article/202610282054005" target="_blank">→ '불량 탄소 배출권'으로 실적 쌓은 공기업 (경향신문)</a>
+  </div>
+
+</div>
