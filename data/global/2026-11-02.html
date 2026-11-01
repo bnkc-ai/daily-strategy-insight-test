@@ -1,0 +1,102 @@
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5F4F0; font-family: -apple-system, 'Malgun Gothic', sans-serif; }
+  .wrap { max-width: 100%; margin: 0; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #2C2C2A; margin-bottom: 8px; }
+
+  /* 오늘의 지역 요약 */
+  .brief-card { background: #E6F1FB; border-left: 4px solid #185FA5; border-radius: 0; padding: 14px 16px; margin-bottom: 16px; }
+  .brief-label { font-size: 11px; font-weight: 600; color: #185FA5; margin-bottom: 6px; }
+  .brief-body { font-size: 15px; line-height: 1.6; color: #0C447C; }
+
+  /* 주요 이슈 */
+  .issue-card { background: #FFFFFF; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border: 1px solid #E8E6DE; }
+  .issue-tags { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text { font-size: 13px; line-height: 1.6; color: #2C2C2A; }
+  .issue-text b { color: #A32D2D; }
+
+  /* 참고 시 유의점 */
+  .note-card { background: #FEF3C7; border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; border-left: 3px solid #B45309; }
+  .note-card.unconfirmed { background: #F1EFE8; border-left: none; }
+  .note-content { font-size: 13px; line-height: 1.6; color: #633806; }
+  .note-card.unconfirmed .note-content { color: #888780; }
+  .note-content b { color: #A32D2D; }
+
+  /* 출처 기사 */
+  .source-note { font-size: 11px; color: #888780; margin-bottom: 8px; line-height: 1.5; }
+  .source-card { background: #F1EFE8; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .source-card a { color: #185FA5; text-decoration: none; font-size: 12px; line-height: 1.5; }
+</style>
+
+<div class="wrap">
+
+  <p class="section-title">🌏 오늘의 지역 요약</p>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <div class="brief-body">라오스에서 한국 지자체와의 계절근로자 협약 확대가 진행 중이며, 캄보디아에서는 농업 기술 협력 연수 활동이 이루어짐. 키르기스스탄 관련 국내 사건·사회 이슈도 확인됨.</div>
+  </div>
+
+  <p class="section-title">📌 주요 이슈</p>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-정책">정책</span>
+    </div>
+    <div class="issue-text">한국 칠곡군이 라오스 노동사회복지부와 계절근로자 도입 업무협약을 체결, <b>2026년</b> 규모를 <b>300명</b>으로 확대 추진 중. 2023년 협약 이후 2년간 무단이탈자 미발생 기록 유지.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <div class="issue-text">내년부터 농협이 외국인 근로자를 직접 고용해 농가에 공급하는 공공형 계절근로사업 첫 시행 예정. 현지 면접에서 <b>30명</b> 모집에 <b>50명</b> 지원, 약 <b>1.7대 1</b> 경쟁률 기록.</div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <div class="issue-text">KOICA 글로벌연수사업 일환으로 캄보디아 지방공무원 <b>15명</b>이 한국 스마트팜 혁신밸리를 방문, ICT 기반 스마트농업 기술 현장 연수 진행.</div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <div class="issue-text">키르기스스탄 및 러시아 국적 외국인 2명이 국내에서 현금 <b>2억 1,700만 원</b> 강도 혐의로 각각 징역 <b>3년 6개월</b>, <b>3년</b> 실형 선고. 공범 일부는 해외 도주 중.</div>
+  </div>
+
+  <p class="section-title">⚠️ 참고 시 유의점</p>
+  <div class="note-card">
+    <div class="note-content">라오스 계절근로자 사업 확대와 관련, 라오스 정부가 근로자 모집·출국 전 교육을 담당하는 구조로 협약이 체결됨. 향후 인력 송출 규모 증가에 따른 라오스 내 노동 인력 동향 모니터링 대상.</div>
+  </div>
+
+  <p class="section-title">🔗 출처 기사</p>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.idaegu.co.kr/news/articleView.html?idxno=564007" target="_blank">→ 칠곡군, 라오스 계절근로자 300명으로 확대</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.idaegu.co.kr/news/articleView.html?idxno=564062" target="_blank">→ 캄보디아 공무원들, 상주서 스마트팜 혁신밸리 견학</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Society/article/all/20261102/134947552/2" target="_blank">→ "더러운 돈이라 신고 못해"…2억 가방 낚아챈 러시아인 등 2명 실형</a>
+  </div>
+
+</div>
